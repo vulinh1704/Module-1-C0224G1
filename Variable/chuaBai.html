@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    td input {
+        width: 40px;
+        height: 40px;
+    }
+
+    th input {
+        height: 30px;
+        text-align: right;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <th colspan="4"><input type="text" id="calc" value="0" readonly></th>
+    </tr>
+    <tr>
+        <td><input type="button" value="(" onclick="getData(event)"></td>
+        <td><input type="button" value=")" onclick="getData(event)"></td>
+        <td><input type="button" value="%" onclick="getData(event)"></td>
+        <td><input type="button" value="AC" onclick="clearData()"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="getData(event)"></td>
+        <td><input type="button" value="8" onclick="getData(event)"></td>
+        <td><input type="button" value="9" onclick="getData(event)"></td>
+        <td><input type="button" value="/" onclick="getData(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="getData(event)"></td>
+        <td><input type="button" value="5" onclick="getData(event)"></td>
+        <td><input type="button" value="6" onclick="getData(event)"></td>
+        <td><input type="button" value="*" onclick="getData(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="getData(event)"></td>
+        <td><input type="button" value="2" onclick="getData(event)"></td>
+        <td><input type="button" value="3" onclick="getData(event)"></td>
+        <td><input type="button" value="-" onclick="getData(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="0" onclick="getData(event)"></td>
+        <td><input type="button" value="." onclick="getData(event)"></td>
+        <td><input type="button" value="=" onclick="getResult()"></td>
+        <td><input type="button" value="+" onclick="getData(event)"></td>
+    </tr>
+</table>
+<script>
+    let phepTinh = ''; // 9/3+2
+    function getData(event) {
+        let data = event.target.value; // (7
+        phepTinh += data; //phepTinh = phepTinh + data // (7
+        document.getElementById("calc").value = phepTinh; // (7
+    }
+
+    function clearData() {
+        phepTinh = ''; // ''
+        document.getElementById("calc").value = "0";
+    }
+
+    function getResult() {
+        let a = document.getElementById("calc").value; // '9/3*2'
+        let result = eval(a);
+        phepTinh = result;
+        document.getElementById("calc").value = phepTinh;
+    }
+</script>
+</body>
+</html>

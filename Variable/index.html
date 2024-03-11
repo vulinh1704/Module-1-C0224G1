@@ -5,8 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<!--<button onclick="getData(e)">7</button>-->
+<input type="button" value="7" onclick="getData(event)">
+<input type="button" value="8" onclick="getData(event)">
 <script>
+    function getData(eval) {
+        console.log(eval.target.value);
+        // ' 7 + 8 - 1'
+    }
+
+    alert(eval(' 7 + 8 - 1'))
     /*
     let b;
     b = 5; // Gán giá trị
@@ -94,8 +102,12 @@
     // alert('5' === 5); // false
     // alert(5 == '5'); // true
 
-    alert(5 != '5'); // false
-    alert(5 !== '5'); // true
+    // alert(5 != '5'); // false
+    // alert(5 !== '5'); // true
+    let x = 83
+    let y = 9
+    x %= y; // x = x % y;
+    
 </script>
 </body>
 </html>
