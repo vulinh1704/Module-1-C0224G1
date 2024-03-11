@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc điều kiện</title>
+</head>
+<body>
+
+<script>
+    // let age = 12;
+    // let money = 20000;
+    // alert(age > 18 || money >= 20000); // đi vô bar false || true => TRUE
+
+    //alert(!true);
+    // alert(!(!(5 < 3)));
+
+    /*
+    let a = +prompt("Nhập vào số: ") // 5
+    if (a > 10) {
+        console.log("a lớn hơn 10")
+    } else if (a === 10) {
+        console.log("a bằng 10") // a bằng 10
+    } else {
+        console.log("a nhỏ hơn 10")
+    }
+    console.log("Hello C02");  // Hello C02
+
+     */
+
+    /*
+    if(a > 10) {
+        console.log("a lớn hơn 10!")
+    } else {
+        console.log("a nhỏ hơn 10")
+    }
+
+ if(5 > 3 || 3 < 2) {
+        alert("Hello")
+    }
+     */
+
+    /*
+    Nhập vào điểm, nếu lớn hơn 90 log ra "tốt", khoảng 70 đến 89 log ra "Khá",
+     50 đến 69 log ra "trung binh", còn lại log ra "yếu"
+     */
+
+    /*
+    let score = +prompt("Nhập vào điểm: ")
+    if (score >= 90) {
+        console.log("Tốt");
+    } else if (score >= 70 && score <= 89) {
+        console.log("Khá")
+    } else if (score >= 50 && score < 70) {
+        console.log("Trung bình")
+    } else {
+        console.log("Yếu")
+    }
+
+     */
+
+
+    /*
+
+    let age = 20;
+    let money = 20000;
+
+    if(age >= 18) { // true
+        if(money >= 20000) { // true
+            alert("Được vô bar");
+        }
+    }
+
+      if(age >= 18 && money >= 20000) {
+        alert("Được vô bar")
+    }
+     */
+
+    let money = 100000;
+    let viTri = 'Giam doc';
+
+    // if(money > 200000 || viTri === 'Giam doc') {
+    //     alert("Tán được em")
+    // }
+
+    /*
+    if(money > 200000) {
+        alert("Tán được em")
+    }
+
+    if(viTri === "Giam doc") {
+        alert("Tán được em")
+    }
+
+
+    // IF, IF-ELSE, IF Bâc thang, IF lồng nhau
+
+     */
+
+
+    let day = +prompt("Nhập thứ"); // 1
+    switch (day) {
+        case 1: // 1 == 1
+            console.log("Chủ nhật");
+            break;
+        case 2:
+            console.log("Thứ 2");
+            break;
+        default:
+            console.log("Không có ngày này");
+            break;
+    }
+
+
+</script>
+</body>
+</html>
