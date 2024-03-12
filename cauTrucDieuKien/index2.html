@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" id="cb1" onchange="check(event)">
+<input type="checkbox" id="cb2" onchange="check(event)">
+<input type="checkbox" id="cb3" onchange="check(event)">
+<script>
+
+    function check(event) {
+        let a = document.getElementById('cb1').checked;
+        let b = document.getElementById('cb2').checked;
+        let c = document.getElementById('cb3').checked;
+        if (event.target.id === 'cb1') {
+            if (a && b && c) {
+                document.getElementById('cb2').checked = false;
+            }
+        } else if (event.target.id === 'cb2') {
+            if (a && b && c) {
+                document.getElementById('cb3').checked = false;
+            }
+        } else if (event.target.id === 'cb3') {
+            if (a && b && c) {
+                document.getElementById('cb1').checked = false;
+            }
+        }
+
+    }
+
+    let arr = [1, 4, 5, 6]
+    let sum = arr.reduce((prev, currentValue, index, arr1) => {
+        return prev + currentValue;
+    }, 0)
+
+    console.log(sum);
+
+</script>
+</body>
+</html>

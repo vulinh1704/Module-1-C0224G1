@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // 10p cước 500d
+    // 10 - 20 cước 1000
+    // tren 20 cươc 2000
+    let phut = +prompt("Nhập phút: ")
+    let cuoc = 0;
+    if(phut <= 10) {
+        cuoc = 500 * phut;
+    } else if(cuoc > 10 && cuoc <= 20) {
+        cuoc = 1000 * phut;
+    } else {
+        cuoc = 2000 * phut;
+    }
+    alert(cuoc);
+</script>
+</body>
+</html>

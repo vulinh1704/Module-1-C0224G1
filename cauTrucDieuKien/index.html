@@ -44,6 +44,7 @@
      50 đến 69 log ra "trung binh", còn lại log ra "yếu"
      */
 
+
     /*
     let score = +prompt("Nhập vào điểm: ")
     if (score >= 90) {
@@ -56,27 +57,23 @@
         console.log("Yếu")
     }
 
-     */
-
-
-    /*
 
     let age = 20;
     let money = 20000;
 
-    if(age >= 18) { // true
-        if(money >= 20000) { // true
+    if (age >= 18) { // true
+        if (money >= 20000) { // true
             alert("Được vô bar");
         }
     }
 
-      if(age >= 18 && money >= 20000) {
+    if (age >= 18 && money >= 20000) {
         alert("Được vô bar")
     }
-     */
 
-    let money = 100000;
-    let viTri = 'Giam doc';
+
+    // let money = 100000;
+    // let viTri = 'Giam doc';
 
     // if(money > 200000 || viTri === 'Giam doc') {
     //     alert("Tán được em")
@@ -97,20 +94,37 @@
      */
 
 
-    let day = +prompt("Nhập thứ"); // 1
+    /*
+    let day = prompt("Nhập thứ"); // 1
     switch (day) {
-        case 1: // 1 == 1
+        case '1': // 1 == 1
             console.log("Chủ nhật");
             break;
-        case 2:
+        case '2':
             console.log("Thứ 2");
+            break;
+        case '3':
+            console.log("Thứ 3");
             break;
         default:
             console.log("Không có ngày này");
             break;
     }
 
+     */
 
+    let a = +prompt("Nhập a")
+    let b = +prompt("Nhập b");
+    // let c = (a > b) ? a : b;
+    // alert(c);
+
+    (a > b) ? alert(a) : alert(b); // Toán tử 3 ngôi
+
+    // if (a > b) {
+    //     alert(a)
+    // } else {
+    //     alert(b);
+    // }
 </script>
 </body>
 </html>
