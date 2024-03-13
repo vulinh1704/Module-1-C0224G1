@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop</title>
+</head>
+<body>
+
+<script>
+    for (let dem = 0; dem < 6; dem++) {
+        document.write("Tôi học tháng thứ " + dem + "<br/>");
+    }
+
+    /*
+    for(<khởi tạo biến đếm>; <điều kiện dừng>; <tăng giảm biến đếm>){
+            <Khối lệnh thực thi>
+    }
+
+    B1: Khởi tạo biến đếm
+    B2: KIếm trả điều kiện dừng nếu true thì đến B3 còn false thì dừng vòng lăp
+    B3: Chạy <Khối lệnh thực thi>
+    B4: <Tăng giảm biến đếm>
+    B5: Quay lại bước 2
+     */
+
+    /*
+    for(;;) {
+        document.write("Linh")
+    }
+
+    Hiển thị 1000 chữ "Số 1, Số 2, Số 3, Số 4, .....
+     for (let i = 1; i <= 1000; i++) {
+        console.log("Số " + i);
+    }
+
+    Hiển thị 1, 3, 5, 7, 9 ,..., 31
+
+    C1:
+    for(let i = 1; i <= 31; i++) {
+        if(i % 2 !== 0) {
+            console.log(i);
+        }
+    }
+
+    C2:
+    for (let i = 1; i <= 31; i = i + 2) {
+        console.log(i);
+    }
+
+     for (let i = 5; i >= 1; i--) {
+        if(i === 2) {
+            break;
+        }
+        console.log(i);
+    }
+    break: Khi gặp break vòng lặp sẽ dừng ngay lập tức
+
+     for (let i = 0; i <= 10; i++) {
+        console.log(i);
+        if (i % 2 !== 0) {
+            continue;
+        }
+    }
+    // 2 4 6 8 10
+    // 0 1 2 3 4 ... 10 true
+     */
+
+    // for (let i = 2; i <= 9; i++) { // i = 10
+    //     for (let j = 1; j <= 9; j++) { // j = 1
+    //         let tich = i * j; // 2 * 9
+    //         console.log(i + "x" + j + " = " + tich);
+    //         break;
+    //     }
+    //     // if(i === 3) {
+    //     //     break;
+    //     // }
+    // }
+
+    // 8 * 9= 720
+
+
+    // let i = 1;
+    // while (i <= 10) {
+    //     console.log(i);
+    //     i++;
+    // }
+
+    let i = 11;
+    do {
+        console.log(i);
+        i++;
+    } while (i <= 10);
+
+</script>
+</body>
+</html>

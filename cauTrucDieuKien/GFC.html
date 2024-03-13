@@ -93,6 +93,22 @@ FAST
             document.getElementById('cheap').checked = false;
         }
     }
+
+    function taskOfPairing(freq) {
+        // Write your code here
+        let sum = 0;
+        for (let i = 0; i < freq.length; i++) {
+            sum += (freq[i] / 2);
+
+            if (sum % 1 !== 0 && i < freq.length - 1) {
+                freq[i + 1] += 1;
+                sum = Math.floor(sum);
+            }
+        }
+        return sum;
+    }
+
+    console.log(taskOfPairing([5, 6, 2]));
 </script>
 </body>
 </html>
