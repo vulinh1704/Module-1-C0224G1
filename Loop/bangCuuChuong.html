@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="bcc" border="1">
+
+</table>
+<script>
+    let html = "";
+    for (let i = 2; i <= 9; i++) { // i = 3
+        html += "<tr>"
+        for (let j = 1; j <= 10; j++) { // j = 1
+            //html+= "<td>" + i + "x" + j + "=" + i * j + "</td>"// 2 x 1 = 2
+            html += `<td>${i} x ${j} = ${i * j}</td>`
+        }
+        html += "</tr>"
+    }
+    document.getElementById("bcc").innerHTML = html;
+</script>
+</body>
+</html>
