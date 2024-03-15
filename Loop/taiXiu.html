@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tài xỉu</title>
+</head>
+<body>
+<button onclick="game()">Chơi</button>
+<script>
+    function game() {
+        let a = +prompt("Nhập khoảng số bạn muốn đoán: ")
+        let soDinhMenh = Math.random() * a// 0 - 0.99
+        soDinhMenh = Math.round(soDinhMenh);
+
+        let count = 0;
+        while (true) {
+            let soBanChon = +prompt("Nhập số bạn đoán: ")
+            if(soDinhMenh === soBanChon) {
+                alert("You Win!!!")
+                break;
+            }
+            if(soBanChon > soDinhMenh) {
+                alert("Số bạn chọn lớn hơn kết quả")
+            }
+            if(soBanChon < soDinhMenh) {
+                alert("Số ban chọn nhỏ hơn kết quả")
+            }
+            if(count === 3) {
+                alert("You are LOSE!!")
+                break;
+            }
+            count++;
+        }
+
+
+    }
+</script>
+</body>
+</html>

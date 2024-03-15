@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+
+<script>
+    // Nhập vào 1 số và kiểm tra xem số đó có là số nguyên tố hay không
+    /*
+    let number = +prompt("Nhập số: ")
+    let count = 0;
+    for (let i = 1; i <= number; i++) {
+      if(number % i === 0) {
+        count++;
+      }
+    }
+    if(count === 2) {
+      alert("Đây là số nguyên tố")
+    } else {
+      alert("Không phải số nguyên tố")
+    }
+     */
+
+    let number = 2;
+    let countSNT = 0;
+    for (; ;) {
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        } // count = 2
+        if (count === 2) {
+            console.log(number); // 2 3 5 ....
+            countSNT++;
+        }
+        number++; // 3
+        if (countSNT === 20) {
+            break;
+        }
+    }
+</script>
+</body>
+</html>

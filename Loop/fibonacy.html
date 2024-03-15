@@ -6,16 +6,55 @@
 </head>
 <body>
 <script>
+    // 0 1 1 2 3 5 8 13 ...
+    /*
     let number1 = 0;
     let number2 = 1;
-    console.log(number1)
+    console.log(number1);
     console.log(number2);
+    let count = 0
+    for (let i = 0; ; i++) {
+        let fib = number1 + number2; // 3
+        console.log(fib);
+        number1 = number2; // 2
+        number2 = fib; // 3
+        count++;
+        if(count === 18) {
+            break;
+        }
+    }
+
+
+let number1 = 0;
+    let number2 = 1;
     for (let i = 0; i < 100; i++) {
-        let fib = number1 + number2; // 0 + 1 = 1
-        console.log(fib); // 1
+        let fib = number1 + number2; // 3
+        if(fib % 5 === 0) {
+            console.log(fib);
+            break;
+        }
+        number1 = number2; // 2
+        number2 = fib; // 3
+
+    }
+     */
+
+    let number1 = 0;
+    let number2 = 1;
+    let count = 0;
+    let sum = 1;
+    for (let i = 0; ; i++) {
+        let fib = number1 + number2;
+        console.log(fib)
+        sum += fib;
         number1 = number2;
         number2 = fib;
+        count++;
+        if(count === 18) {
+            break;
+        }
     }
+    console.log(sum);
 </script>
 </body>
 </html>
