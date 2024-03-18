@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // let arr = [1, 4, 5, 67, 7];
+    // let arr = [
+    //     [3, 2, 5],
+    //     [4, 6, 7],
+    //     [4, 6, 2]
+    // ];
+    // alert(arr[1][1]) // [4,6];
+    // alert(arr[0][1]);
+
+    // for (let i = 0; i < arr.length; i++) { // i = 0 => [3, 2, 5]
+    //     for (let j = 0; j < arr[i].length; j++) { // arr[0].length = 3 =>
+    //         console.log(arr[i][j]); // 3 2 5
+    //     }
+    // }
+
+    // Tìm phần tử lớn nhất trong mảng 2 chiều
+    // let max = arr[0][0];
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] > max) {
+    //             max = arr[i][j];
+    //         }
+    //     }
+    // }
+    // console.log(max);
+
+    let arr = [
+        [3, 2, 5],
+        [4, 6, 7],
+        [4, 6, 2]
+    ];
+
+    // let sum = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         sum+= arr[i][j];
+    //     }
+    // }
+    // console.log(sum);
+    // Tính tổng các phần tử theo hàng
+
+    for (let i = 0; i < arr.length; i++) {
+        let sum = 0;
+        for (let j = 0; j < arr[0].length; j++) { // [4, 6, 7]
+            sum += arr[i][j];
+        }
+        console.log(sum); // 17
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let array = [9, 7, 5, 9, 2, 6]; // Dùng 2 for liên tiếp nhau tìm max2;
+    // Hưng: Tìm tổng 10 số trong dãy fibonaci đầu tiên.
+    let max1 = array[0];
+    let max2 = array[0];
+
+    for (let i = 0; i < array.length; i++) {
+        if(max1 < array[i]) {
+            max2 = max1;
+            max1 = array[i];
+        }
+    }
+    console.log("Số lớn nhất : " + max1);
+    console.log("Số lớn thứ 2: " + max2);
+
+
+
+    // let count = 0;
+    // let sum = 0;
+    // for (let i = 0; i < array.length; i++) {
+    //     if(array[i] % 5 === 0) {
+    //         count++;
+    //         sum += array[i];
+    //     }
+    // }
+    // let tb = sum / count;
+    // console.log(tb);
+
+    // let max = array[0];
+    // for (let i = 0; i < array.length; i++) {
+    //     if(array[i] % 2 === 0) {
+    //         max = array[i];
+    //         break;
+    //     }
+    // }
+    //
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i] > max && array[i] % 2 === 0) { // 1 > 0
+    //         max = array[i]; // 1
+    //     }
+    // }
+    // console.log(max);
+
+    // let sum = 0;
+    // for (let i = 0; i < array.length; i++) {
+    //     if(array[i] > 10) sum += array[i];
+    // }
+    // console.log(sum)
+    // for (let i = 0; i < array.length; i++) {
+    //     if(array[i] % 2 === 0) {
+    //         sum += array[i];
+    //     }
+    // }
+    // console.log(sum)
+    /*
+    for (let i = 0; i < array.length; i++) {
+        if(i % 2 === 0) {
+            console.log(array[i]);
+        }
+    }
+
+     */
+</script>
+</body>
+</html>
