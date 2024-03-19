@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // let arr =  [ 'c', 's', 'c', '2', '6', '1' ];
+    // let arr2 = [];
+    // for (let i = arr.length - 1; i >= 0; i--) {
+    //     arr2.push(arr[i]);
+    // }
+    // console.log(arr2.join(''))
+
+    // let str = '  Tôi    yêu bạn';
+    // str = str.trim(); // Cắt dấu cách ở 2 đầu của chuỗi
+    // let count = 1;
+    // for (let i = 0; i < str.length; i++) {
+    //     if(str[i] === ' ' && str[i + 1] !== ' ') {
+    //         count++;
+    //     }
+    // }
+    // console.log(count);
+
+    // let arr = str.split(' '); // Cắt chuỗi thành mảng theo dấu trong ngoặc;
+    // console.log(arr);
+    // let count = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if(arr[i] !== '') {
+    //         count++;
+    //     }
+    // }
+    // console.log(count);
+
+    let str = prompt("Nhập chuỗi: "); // linh-2-hello
+    let arr = str.split(''); // ['l', 'i',....]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === '-') {
+            arr[i] = '_';
+        }
+    }
+    console.log(arr.join(''));
+
+    // Thêm phần tử vào mảng k dùng push;
+    // splice
+</script>
+</body>
+</html>

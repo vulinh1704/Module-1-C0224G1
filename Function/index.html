@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    // tên hàm được đặt theo động từ và viết liền không dấu (tập thói quen đặt tên hàm bằng tiếng Anh)
+    function getSum() { // Khai báo hàm
+        let a = 1;
+        let b = 2;
+        console.log(a + b);
+    }
+
+    getSum(); // Gọi hàm (Sử dụng hàm)
+
+     */
+
+    // Các loại hàm
+    // Loại 1: Có tham số truyền vào
+    /*
+    function getSum(a, b) { // a và b là tham số truyền vào
+        let sum = a + b;
+        console.log(sum);
+    }
+
+    getSum(4, 5); // 4, 5 được gọi là đối số truyền vào hàm
+    getSum(7, 8);
+    getSum(9, 3);
+
+     */
+
+    // Loại 2: Hàm có return
+    // return: dùng để trả về giá trị của hàm
+    /*
+    function getSum(a, b) {
+        let sum = a + b;
+        return sum; // Hàm này đang trả về sum;
+        // Khi gặp từ khóa return ngay lập tức dừng hàm và trả về giá trị
+        // return phải nằm trong hàm
+    }
+
+    let tbc = getSum(4, 5) / 2; // 9
+    console.log(tbc);
+
+    console.log(getSum(4, 3)); // 7
+
+     */
+
+    /*
+    function getHello() {
+        let name = "Hello C02";
+        console.log("1")
+        for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 100000000; i++) {
+                return name;
+            }
+        }
+        console.log("2");
+    }
+    getHello();
+
+     */
+
+    /*
+    let a = 10; // Biến toàn cục
+
+    function getSum(a, b) {
+        let sum = a + b; // function scope
+        return sum;
+    }
+
+    function getAvg(b, c) {
+        let sum = getSum(b, c); // undefined
+        return sum / 2;
+    }
+
+
+    console.log(getAvg(3, 5));
+
+    if(true) {
+        let a = 10; // block scope
+    }
+
+     */
+
+
+    // Tạo một fuction in ra a đến b (a, b do người dùng nhập)
+    /*
+    function show(a, b) {
+        for (let i = a; i <= b; i++) {
+            console.log(i);
+        }
+    }
+
+    show(1, 20);
+
+     */
+
+    // Tạo 1 một function trả về tổng từ a đến b (a, b do người dùng nhập)
+    function getSum(a, b) {
+        let sum = 0;
+        for (let i = a; i <= b; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+
+    console.log(getSum(1, 10));
+
+</script>
+</body>
+</html>

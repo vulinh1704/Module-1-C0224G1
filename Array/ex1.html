@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea onkeydown="demo(event)" id="f">
+
+</textarea>
+<script>
+    let arr = ['T', 'o', 'i', ' ', 'D', 'e', 'p', ' '];
+    let index = 0;
+
+    function demo() {
+        if(event.key === 'Backspace'){
+            return;
+        }
+        event.preventDefault();
+        document.getElementById('f').value += arr[index];
+        index++;
+        if (index === arr.length) {
+            index = 0;
+            document.getElementById('f').value = '';
+        }
+    }
+</script>
+</body>
+</html>

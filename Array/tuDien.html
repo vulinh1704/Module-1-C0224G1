@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let vietNam = ['Chuối', 'Táo', 'Chó' , 'Mèo'];
+    let english = ['banana', 'apple', 'dog', 'cat'];
+    let inputEnglish = prompt("Nhập tiếng Anh: ");
+
+    let index = -1;
+    for (let i = 0; i < english.length; i++) {
+        if (inputEnglish === english[i]) {
+            index = i;
+            break;
+        }
+    }
+    alert(vietNam[index]);
+
+</script>
+</body>
+</html>
