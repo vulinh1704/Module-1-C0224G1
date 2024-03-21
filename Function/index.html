@@ -100,15 +100,30 @@
      */
 
     // Tạo 1 một function trả về tổng từ a đến b (a, b do người dùng nhập)
-    function getSum(a, b) {
-        let sum = 0;
-        for (let i = a; i <= b; i++) {
-            sum += i;
+    // function getSum(a, b) {
+    //     let sum = 0;
+    //     for (let i = a; i <= b; i++) {
+    //         sum += i;
+    //     }
+    //     return sum;
+    // }
+    //
+    // console.log(getSum(1, 10));
+
+
+    // aabaa
+
+    function isPalindrome(s) {
+        let a = s.length / 2;
+        for (let i = 0; i <= a; i++) {  // 1
+            if (s[i] !== s[s.length - i - 1]){ // c !== a
+                return false;
+            }
         }
-        return sum;
+        return true;
     }
 
-    console.log(getSum(1, 10));
+    console.log(isPalindrome("abbaa"))
 
 </script>
 </body>
