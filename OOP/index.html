@@ -36,6 +36,7 @@
      */
     // Tạo một lớp Cat có name, mauLong, giong và hành động ăn, kêu
     // Tạo một đối tượng mèo cụ thể từ lớp trên.
+    /*
     class Cat {
         name
         mauLong
@@ -61,6 +62,85 @@
     meo.mauLong = "Den";
     console.log(meo.mauLong);
     meo.keu();
+
+     */
+
+    /*
+    class Rectangle {
+        length;
+        width;
+
+        constructor(lengthInput, widthInput) {
+            this.length = lengthInput;
+            this.width = widthInput;
+        }
+
+        getS() {
+            let s = this.length * this.width;
+            return s;
+        }
+
+        getC() {
+            let c = (this.width + this.length) * 2;
+            return c;
+        }
+    }
+
+    let myRectangle = new Rectangle(3, 1);
+    document.write(`chieu dai: ${myRectangle.length}, chieu rong: ${myRectangle.width}, S = ${myRectangle.getS()}, C = ${myRectangle.getC()}`)
+    myRectangle.length = 7;
+    myRectangle.width = 5;
+    document.write(`<br>chieu dai: ${myRectangle.length}, chieu rong: ${myRectangle.width}, S = ${myRectangle.getS()}, C = ${myRectangle.getC()}`)
+
+
+
+     */
+
+    class Student {
+        name;
+        age;
+        scores;
+
+        constructor(nameInput, ageInput, scoresInput) {
+            this.name = nameInput;
+            this.age = ageInput;
+            this.scores = scoresInput;
+        }
+
+        setName(nameInput) {
+            this.name = nameInput;
+        }
+
+        setAge(ageInput) {
+            this.age = ageInput;
+        }
+
+        setScores(scoresInput) {
+            this.scores = scoresInput;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getAvg() {
+            let sum = 0;
+            for (let i = 0; i < this.scores.length; i++) {
+                sum += this.scores[i];
+            }
+            return sum / this.scores.length;
+        }
+    }
+
+    let student1 = new Student("A", 22, [7, 6, 5]);
+    let student2 = new Student("B", 24, [9, 9, 3]);
+    student1.setName("C");
+    console.log(student1.getName());
+    if(student1.getAvg() > student2.getAvg()) {
+        console.log(student1.getName() + " có điểm lớn hơn " + student2.getName());
+    } else {
+        console.log(student2.getName() + " có điểm lớn hơn " + student1.getName());
+    }
 
 </script>
 </body>
