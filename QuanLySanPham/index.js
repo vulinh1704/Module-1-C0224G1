@@ -55,3 +55,23 @@ showAll();
 // let thongTin = "Bạn " + name + " có tuổi " + age + ". Rất vui gặp bạn";
 // let thongTin = `bạn ${name} có tuổi ${age}. Rất vui được gặp bạn `
 // Template String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
