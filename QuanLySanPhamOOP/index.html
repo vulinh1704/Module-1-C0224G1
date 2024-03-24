@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>OOP</title>
-
 </head>
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
 <body>
-<input type="text" id="id">
-<input type="text" id="name">
-<input type="text" id="price">
-<input type="text" id="image">
+
+<center>
+    <div>
+        <button onclick="showAll()">Home</button>
+        <button onclick="showFormAdd()">Add</button>
+        <br>
+        <br>
+        <input type="text" placeholder="Search">
+        <button>Tìm kiếm</button>
+    </div>
+    <div id="main" style="margin-top: 50px">
+
+    </div>
+</center>
 
 <script src="script/Product.js"></script>
 <script src="script/ProductManager.js"></script>
